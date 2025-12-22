@@ -1,0 +1,179 @@
+/* =========================
+   Page layout
+========================= */
+.page--404 {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* =========================
+   Header
+========================= */
+.header {
+	padding: 24px 32px;
+}
+
+.header-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.header-logo a {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	text-decoration: none;
+	color: inherit;
+}
+
+.logo-image {
+	width: 28px;
+	height: 28px;
+}
+
+.logo-text {
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 0.04em;
+}
+
+.logo-snow {
+	color: #000;
+}
+
+.logo-ui {
+	color: #9ca3af;
+}
+
+/* Navigation */
+.nav-links {
+	list-style: none;
+	display: flex;
+	gap: 32px;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-link {
+	text-decoration: none;
+	font-size: 14px;
+	color: #111;
+}
+
+.nav-link:hover {
+	text-decoration: underline;
+}
+
+/* Header actions */
+.header-actions {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+/* =========================
+   Buttons
+========================= */
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px 14px;
+	border-radius: 999px;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.btn--ghost {
+	background-color: #f0f0f0;
+	color: #111;
+}
+
+.btn--ghost:hover {
+	background-color: #e6e6e6;
+}
+
+.btn--primary {
+	background-color: #000;
+	color: #fff;
+}
+
+.btn--primary:hover {
+	background-color: #111;
+}
+
+.btn--light {
+	background-color: #ededed;
+	color: #111;
+}
+
+.btn--light:hover {
+	background-color: #e0e0e0;
+}
+
+/* =========================
+   404 block
+========================= */
+.error {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+	text-align: center;
+}
+
+.error-title {
+	margin: 0;
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.error-illustration {
+	width: 200px;
+	height: 200px;
+}
+
+.error-action {
+	margin-top: 8px;
+}
+
+/* =========================
+   Footer
+========================= */
+.footer {
+	padding: 24px;
+	text-align: center;
+}
+
+.footer-copy {
+	margin: 0;
+	font-size: 12px;
+	color: #9ca3af;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 900px) {
+	.nav-links {
+		display: none;
+	}
+
+	.error-title {
+		font-size: 36px;
+	}
+}

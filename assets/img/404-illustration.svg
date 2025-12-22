@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  width="200"
+  height="200"
+  viewBox="0 0 200 200"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <!-- arms -->
+  <path d="M40 70 C20 55 18 35 30 25"
+        fill="none"
+        stroke="#000"
+        stroke-width="4"
+        stroke-linecap="round"/>
+
+  <path d="M160 70 C180 55 182 35 170 25"
+        fill="none"
+        stroke="#000"
+        stroke-width="4"
+        stroke-linecap="round"/>
+
+  <!-- arms fill -->
+  <path d="M42 72 C28 58 26 42 34 32"
+        stroke="#8b8cf5"
+        stroke-width="10"
+        stroke-linecap="round"/>
+
+  <path d="M158 72 C172 58 174 42 166 32"
+        stroke="#8b8cf5"
+        stroke-width="10"
+        stroke-linecap="round"/>
+
+  <!-- body -->
+  <path d="M100 35 L155 130 H45 Z"
+        fill="#ffffff"
+        stroke="#000"
+        stroke-width="4"
+        stroke-linejoin="round"/>
+
+  <!-- eyes -->
+  <circle cx="85" cy="60" r="7" fill="#000"/>
+  <circle cx="115" cy="60" r="7" fill="#000"/>
+  <circle cx="87" cy="58" r="2" fill="#fff"/>
+  <circle cx="117" cy="58" r="2" fill="#fff"/>
+
+  <!-- eyebrows -->
+  <path d="M75 48 C85 42 95 42 105 48"
+        fill="none"
+        stroke="#000"
+        stroke-width="3"
+        stroke-linecap="round"/>
+
+  <!-- exclamation mark -->
+  <rect x="94" y="70" width="12" height="40" rx="6" fill="#ef4444"/>
+  <circle cx="100" cy="118" r="6" fill="#ef4444"/>
+
+  <!-- legs -->
+  <path d="M85 130 V165"
+        stroke="#8b8cf5"
+        stroke-width="12"
+        stroke-linecap="round"/>
+
+  <path d="M115 130 V165"
+        stroke="#8b8cf5"
+        stroke-width="12"
+        stroke-linecap="round"/>
+
+  <!-- ground -->
+  <path d="M65 170 C85 175 115 175 135 170"
+        fill="none"
+        stroke="#000"
+        stroke-width="3"
+        stroke-linecap="round"/>
+
+</svg>
