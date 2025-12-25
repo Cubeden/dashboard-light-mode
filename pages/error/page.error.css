@@ -1,0 +1,186 @@
+.error {
+	padding: 280px 0 280px;
+	place-items: center;
+}
+
+.error__card {
+	width: 368px;
+	height: 342px;
+
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+}
+
+.error__title {
+	margin: 0;
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.error__image {
+	width: 180px;
+	height: 200px;
+	object-fit: contain;
+}
+
+/* ===== Countdown - coming-soon ===== */
+.countdown {
+	display: flex;
+	align-items: flex-start;
+	gap: 28px;
+}
+
+.countdown__item {
+	width: 62px;
+	text-align: center;
+	place-items: center;
+}
+
+.countdown__value {
+	font-weight: 700;
+	line-height: 1;
+	font-size: 48px;
+	margin: 0;
+	color: #111;
+}
+
+.countdown__label {
+	margin-top: 12px;
+	font-size: 14px;
+	color: #9c9c9c;
+	font-weight: 400;
+}
+
+/* two-dot separator */
+.countdown__sep {
+	position: relative;
+	width: 14px;
+	height: 58px;
+	margin-top: 4px;
+}
+
+.countdown__sep::before,
+.countdown__sep::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 8px;
+	height: 8px;
+	background: rgba(0, 0, 0, 0.22);
+	border-radius: 50%;
+}
+
+.countdown__sep::before {
+	top: 18%;
+}
+.countdown__sep::after {
+	top: 52%;
+}
+
+/* ===== Subscribe ===== */
+.subscribe {
+	width: 360px;
+	height: 56px;
+
+	display: flex;
+	align-items: center;
+
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	border-radius: 18px;
+
+	padding: 0 20px;
+	gap: 8px;
+	cursor: pointer;
+}
+
+.subscribe__input {
+	flex: 1;
+	min-width: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+
+	padding: 0;
+	font-size: 16px;
+}
+
+.subscribe__input::placeholder {
+	color: #cbcbcb;
+}
+
+.subscribe__btn {
+	flex: 0 0 auto;
+	width: 20px;
+	height: 20px;
+
+	border: none;
+	background: transparent;
+	padding: 0;
+
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+}
+
+.subscribe__btn:active {
+	transform: translateX(1px);
+}
+
+.subscribe__icon {
+	width: 20px;
+	height: 20px;
+	object-fit: contain;
+}
+
+/* Focus styles */
+.subscribe:focus-within {
+	border-color: #bdbdbd;
+	box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.06);
+}
+
+.subscribe__btn:focus-visible {
+	outline: 2px solid rgba(0, 0, 0, 0.35);
+	outline-offset: 4px;
+	border-radius: 12px;
+}
+
+.support {
+	text-align: center;
+}
+
+.support__title {
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.1;
+	font-weight: 400;
+	color: #a9a9a9;
+}
+
+.support__email {
+	display: inline-block;
+	margin-top: 12px;
+	font-size: 14px;
+	line-height: 1.1;
+	font-weight: 400;
+	color: #b7b9ff;
+	text-decoration: none;
+}
+
+.support__email:hover,
+.support__email:focus-visible {
+	text-decoration: underline;
+}
+
+.error__card.error-coming-soon {
+	width: 360px;
+	height: 476px;
+}
+
+.error__card.error-maintenance {
+	width: 609px;
+	height: 354px;
+}

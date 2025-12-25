@@ -1,18 +1,19 @@
 /* =========================
    Fonts
 ========================= */
+
 @font-face {
-	font-family: "Poppins";
-	src: url("../fonts/poppins-v24-latin-regular.woff2") format("woff2");
+	font-family: "Robot";
+	src: url("../fonts/roboto-latin-400-normal.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Roboto";
-	src: url("../fonts/roboto-v50-latin-regular.woff2") format("woff2");
-	font-weight: 400;
+	font-family: "Robot";
+	src: url("../fonts/roboto-latin-400-normal.woff2") format("woff2");
+	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }
@@ -28,12 +29,28 @@
 
 html,
 body {
+	margin: 0;
 	height: 100%;
 }
 
 body {
 	margin: 0;
-	/* Option 1: Poppins as the main, Roboto as a fallback */
-	font-family: "Poppins", "Roboto", system-ui, -apple-system, "Segoe UI", Arial,
-		sans-serif;
+	font-family: "Robot", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+	font-weight: 400;
+	color: #111;
+	background: #fff;
+}
+
+main {
+	flex: 1;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+a {
+	color: inherit;
 }
