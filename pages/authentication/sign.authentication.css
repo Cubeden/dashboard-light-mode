@@ -17,12 +17,15 @@
 	flex-direction: column;
 	align-items: center;
 }
+.auth__card-v {
+	justify-content: space-between !important;
+}
 
 .auth__title {
 	margin: 0;
 	font-size: 24px;
 	line-height: 1.1;
-	font-weight: 700;
+	font-weight: 600;
 	color: #111;
 }
 
@@ -87,7 +90,7 @@
 	height: 4px;
 	width: 90px;
 	border-radius: 999px;
-	background: #cbcbcb;
+	background: #cecece;
 }
 
 .auth__dividerText {
@@ -100,7 +103,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
-	align-items: stretch;
+	text-align: center;
 }
 
 .auth__input {
@@ -138,6 +141,14 @@
 	font-size: 16px;
 }
 
+.auth__link-forgot {
+	text-decoration: none;
+	color: #b7b9ff;
+	align-self: center;
+	margin-top: 12px;
+	font-size: 14px;
+}
+
 .auth__link:hover,
 .auth__link:focus-visible {
 	text-decoration: underline;
@@ -169,6 +180,10 @@
 	color: #9aa0a6;
 	margin: 0;
 }
+.auth__p-v {
+	font-size: 14px;
+	color: #9aa0a6;
+}
 
 .auth__foot {
 	margin: 26px 0 0;
@@ -178,4 +193,53 @@
 .auth__check {
 	color: #9aa0a6;
 	margin: 0;
+	text-align: start;
+}
+.icon-mobile {
+	width: 80px;
+	height: 80px;
+}
+
+/* //? */
+.otp__inputs {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	margin: 0 auto 2px;
+}
+
+.otp__input {
+	width: 56px;
+	height: 52px;
+	border-radius: 18px;
+	border: 1.5px solid rgba(0, 0, 0, 0.12);
+	outline: none;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 600;
+	background: #fff;
+}
+
+.otp__input:focus {
+	border-color: rgba(0, 0, 0, 0.35);
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.card__phone {
+	margin: 0 0 18px;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+
+.card__hint {
+	margin: 0 0 26px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.setup__title {
+	margin: 14px 0 28px;
+	font-size: 16px;
+	color: #9aa0a6;
 }

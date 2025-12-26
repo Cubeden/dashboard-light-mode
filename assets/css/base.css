@@ -3,17 +3,17 @@
 ========================= */
 
 @font-face {
-	font-family: "Robot";
-	src: url("../fonts/roboto-latin-400-normal.woff2") format("woff2");
-	font-weight: 400;
+	font-family: 'Poppins';
+	src: url('../fonts/poppins-latin-300-normal.woff2') format('woff2');
+	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Robot";
-	src: url("../fonts/roboto-latin-400-normal.woff2") format("woff2");
-	font-weight: 700;
+	font-family: 'Poppins';
+	src: url('../fonts/poppins-latin-600-normal.woff2') format('woff2');
+	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
 }
@@ -35,8 +35,9 @@ body {
 
 body {
 	margin: 0;
-	font-family: "Robot", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-	font-weight: 400;
+	font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Arial,
+		sans-serif;
+	font-weight: 300;
 	color: #111;
 	background: #fff;
 }

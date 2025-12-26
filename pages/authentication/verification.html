@@ -12,9 +12,8 @@
 
 		<link rel="stylesheet" href="sign.authentication.css" />
 
-		<title>Sign In</title>
+		<title>verification</title>
 	</head>
-
 	<body>
 		<div class="wrapper">
 			<header>
@@ -43,78 +42,68 @@
 
 					<div class="header-actions">
 						<a class="btn btn--ghost" href="sign-up.html">Sign up</a>
-						<a class="btn btn--primary" href="#">Sign in</a>
+						<a class="btn btn--primary" href="sign-in.html">Sign in</a>
 					</div>
 				</nav>
 			</header>
 
 			<main>
 				<section class="system">
-					<div class="auth__card" role="region" aria-label="Sign in">
-						<h1 class="auth__title">Sign In</h1>
-						<p class="auth__subtitle">Your Social Campaigns</p>
-
-						<div class="auth__social">
-							<button class="auth__socialBtn" type="button">
-								<img
-									src="../../assets/img/apple.svg"
-									class="icon"
-									alt="icon apple"
-								/>
-								<span>Sign in with Apple</span>
-							</button>
-
-							<button class="auth__socialBtn" type="button">
-								<img
-									src="../../assets/img/google.svg"
-									class="icon"
-									alt="icon google"
-								/>
-								<span>Sign in with Google</span>
-							</button>
+					<div
+						class="auth__card auth__card-v"
+						role="region"
+						aria-label="Sign in"
+					>
+						<img
+							src="../../assets/img/telephone.svg"
+							class="icon-mobile"
+							alt="phone"
+						/>
+						<div>
+							<h1 class="auth__title">Two Step verification</h1>
+							<p class="auth__p-v">Enter the verification code we sent to</p>
 						</div>
-
-						<div
-							class="auth__divider"
-							role="separator"
-							aria-label="Or with Email"
-						>
-							<span class="auth__dividerLine"></span>
-							<span class="auth__dividerText">Or with Email</span>
-							<span class="auth__dividerLine"></span>
-						</div>
-
-						<form class="auth__form" action="#">
-							<input
-								class="auth__input"
-								id="email"
-								name="email"
-								type="email"
-								placeholder="Email"
-								autocomplete="email"
-							/>
-
-							<input
-								class="auth__input"
-								id="password"
-								name="password"
-								type="password"
-								placeholder="Password"
-								autocomplete="current-password"
-							/>
-
-							<a class="auth__link" href="forgot-password.html"
-								>Forgot Password?</a
-							>
-
-							<button class="auth__submit" type="submit">Sign In</button>
+						<p class="card__phone">+852 19850622</p>
+						<p class="card__hint">Type your 4 digit security code</p>
+						<form class="auth__form" action="setup-new-password.html">
+							<div class="otp__inputs" role="group" aria-label="4 digit code">
+								<input
+									class="otp__input"
+									inputmode="numeric"
+									pattern="[0-9]*"
+									maxlength="1"
+									value="5"
+									aria-label="Digit 1"
+								/>
+								<input
+									class="otp__input"
+									inputmode="numeric"
+									pattern="[0-9]*"
+									maxlength="1"
+									aria-label="Digit 2"
+								/>
+								<input
+									class="otp__input"
+									inputmode="numeric"
+									pattern="[0-9]*"
+									maxlength="1"
+									aria-label="Digit 3"
+								/>
+								<input
+									class="otp__input"
+									inputmode="numeric"
+									pattern="[0-9]*"
+									maxlength="1"
+									aria-label="Digit 4"
+								/>
+							</div>
+							<button class="auth__submit" type="submit">Submit</button>
 						</form>
-
 						<p class="auth__foot">
-							Not a Member yet?
-							<a class="auth__link auth__link--primary" href="sign-up.html"
-								>Sign Up</a
-							>
+							Didn't get the code?
+							<a href="#" class="auth__link">Resend</a>
+							or
+							<a class="auth__link" href="verification.html">Call Us</a>
 						</p>
 					</div>
 				</section>
