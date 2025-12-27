@@ -3,7 +3,137 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+
+		<link rel="icon" href="../../assets/icons/favicon.ico" sizes="any" />
+
+		<link rel="stylesheet" href="../../assets/css/base.css" />
+		<link rel="stylesheet" href="../../assets/css/layout.css" />
+		<link rel="stylesheet" href="../../assets/css/components.css" />
+
+		<link rel="stylesheet" href="sign.authentication.css" />
+
+		<title>Billing details</title>
 	</head>
-	<body></body>
+	<body>
+		<div class="wrapper">
+			<header>
+				<nav class="header__container container" aria-label="Primary">
+					<div class="logo">
+						<a href="../error/404.html" class="logo__link">
+							<img
+								src="../../assets/img/logo.svg"
+								alt="SnowUI logo"
+								class="logo__img"
+							/>
+							<p class="logo-text">
+								<span class="logo-snow">SNOW</span>
+								<span class="logo-ui">UI</span>
+							</p>
+						</a>
+					</div>
+
+					<ul class="nav-links">
+						<li><a class="nav-links__link" href="#">Product</a></li>
+						<li><a class="nav-links__link" href="#">Solutions</a></li>
+						<li><a class="nav-links__link" href="#">Resources</a></li>
+						<li><a class="nav-links__link" href="#">Download</a></li>
+						<li><a class="nav-links__link" href="#">Pricing</a></li>
+					</ul>
+
+					<div class="header-actions">
+						<a class="btn btn--ghost" href="sign-up.html">Sign up</a>
+						<a class="btn btn--primary" href="sign-in.html">Sign in</a>
+					</div>
+				</nav>
+			</header>
+
+			<main>
+				<section class="system">
+					<div
+						class="auth__card auth__card-a"
+						role="region"
+						aria-label="Sign in"
+					>
+						<h1 class="auth__title">Account info</h1>
+						<p class="setup__title-a">
+							if you need more info, please check out
+							<a class="auth__link" href="verification.html">Help Page.</a>
+						</p>
+						<form
+							class="auth__form auth__form-billing"
+							action="billing-details-card.html"
+						>
+							<span class="acc__title">Business Name</span>
+							<input
+								class="auth__input auth__input-billing"
+								id="Business-Name"
+								name="text"
+								type="text"
+								placeholder=""
+								autocomplete="text"
+							/>
+							<span class="acc__title">Shortened Description</span>
+							<input
+								class="auth__input auth__input-billing"
+								id="shortened"
+								name="text"
+								type="text"
+								placeholder=""
+								autocomplete="text"
+							/>
+							<span class="acc__title auth__input-billing"
+								>Corporation Type</span
+							>
+							<select class="auth__input" id="select">
+								<option value="Select">Select</option>
+								<option value="Select 2">Select 2</option>
+								<option value="Select 3">Select 3</option>
+							</select>
+							<span class="acc__title">Business Description</span>
+							<input
+								class="auth__input acc_input-billing"
+								id="description"
+								name="description"
+								type="description"
+								placeholder=""
+								autocomplete="description"
+							/>
+							<span class="acc__title">Contact Email</span>
+							<input
+								class="auth__input auth__input-billing"
+								id="email"
+								name="email"
+								type="email"
+								placeholder=""
+								autocomplete="email"
+							/>
+
+							<div class="button-account" action="#">
+								<button class="button button--ghost">
+									<img
+										src="../../assets/img/arrow-left.svg"
+										class="icon subscribe__btn-left"
+										alt="arrow"
+									/>Previous
+								</button>
+								<button class="button button--primary">
+									<img
+										src="../../assets/img/arrow-right.svg"
+										class="icon subscribe__btn-right"
+										alt="arrow"
+									/>Continue
+								</button>
+							</div>
+						</form>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer">
+				<div class="footer__container container">
+					<p class="footer__copy">&copy; 2025 SnowUI</p>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>

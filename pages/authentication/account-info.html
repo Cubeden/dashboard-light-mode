@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="icon" href="../../assets/icons/favicon.ico" sizes="any" />
+
+		<link rel="stylesheet" href="../../assets/css/base.css" />
+		<link rel="stylesheet" href="../../assets/css/layout.css" />
+		<link rel="stylesheet" href="../../assets/css/components.css" />
+
+		<link rel="stylesheet" href="sign.authentication.css" />
+
+		<title>Account info</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<nav class="header__container container" aria-label="Primary">
+					<div class="logo">
+						<a href="../error/404.html" class="logo__link">
+							<img
+								src="../../assets/img/logo.svg"
+								alt="SnowUI logo"
+								class="logo__img"
+							/>
+							<p class="logo-text">
+								<span class="logo-snow">SNOW</span>
+								<span class="logo-ui">UI</span>
+							</p>
+						</a>
+					</div>
+
+					<ul class="nav-links">
+						<li><a class="nav-links__link" href="#">Product</a></li>
+						<li><a class="nav-links__link" href="#">Solutions</a></li>
+						<li><a class="nav-links__link" href="#">Resources</a></li>
+						<li><a class="nav-links__link" href="#">Download</a></li>
+						<li><a class="nav-links__link" href="#">Pricing</a></li>
+					</ul>
+
+					<div class="header-actions">
+						<a class="btn btn--ghost" href="sign-up.html">Sign up</a>
+						<a class="btn btn--primary" href="sign-in.html">Sign in</a>
+					</div>
+				</nav>
+			</header>
+
+			<main>
+				<section class="system">
+					<div
+						class="auth__card auth__card-a"
+						role="region"
+						aria-label="Sign in"
+					>
+						<h1 class="auth__title">Account info</h1>
+						<p class="setup__title-a">
+							if you need more info, please check out
+							<a class="auth__link" href="verification.html">Help Page.</a>
+						</p>
+						<form class="auth__form" action="billing-details.html">
+							<div>
+								<span class="acc__title acc_title-a">Specify Team Size</span>
+								<input
+									class="otp__input-a"
+									inputmode="numeric"
+									pattern="[0-9]*"
+									maxlength="1"
+									value="5"
+									aria-label="Digit 1"
+									id="1"
+								/>
+								<input
+									class="otp__input-a"
+									inputmode="numeric"
+									pattern="[0-9]*"
+									maxlength="1"
+									aria-label="Digit 2"
+									value="2"
+									id="2"
+								/>
+								<input
+									class="otp__input-a"
+									inputmode="numeric"
+									pattern="[0-9]*"
+									maxlength="1"
+									aria-label="Digit 3"
+									value="3"
+									id="3"
+								/>
+								<input
+									class="otp__input-a"
+									inputmode="numeric"
+									pattern="[0-9]*"
+									maxlength="1"
+									aria-label="Digit 4"
+									value="4"
+									id="4"
+								/>
+
+								<p class="setup__title-a">
+									Customer will see this shortened version of your statement
+									descriptor.
+								</p>
+							</div>
+
+							<span class="acc__title">Team Account Name</span>
+							<input
+								class="auth__input"
+								id="text"
+								name="text"
+								type="text"
+								placeholder=""
+								autocomplete="text"
+							/>
+
+							<span class="acc__title">Select Account Plan</span>
+							<input
+								class="acc__control"
+								type="radio"
+								name="account"
+								id="acc-personal"
+								checked
+							/>
+							<label class="acc acc-input" for="acc-personal">
+								<span class="acc__icon" aria-hidden="true">
+									<img
+										src="../../assets/img/account.svg"
+										alt="account icon"
+										class="acc__icon"
+									/>
+								</span>
+
+								<span class="acc__text">
+									<span class="acc__title">Company account</span>
+									<span class="acc__sub"
+										>Use images to enhance your post flow.</span
+									>
+								</span>
+
+								<span class="acc__dot" aria-hidden="true"></span>
+							</label>
+
+							<input
+								class="acc__control"
+								type="radio"
+								name="account"
+								id="acc-corp"
+							/>
+							<label class="acc acc-input" for="acc-corp">
+								<span class="acc__icon" aria-hidden="true">
+									<img
+										src="../../assets/img/suitcase.svg"
+										alt="suitcase icons"
+										class="acc__icon"
+									/>
+								</span>
+
+								<span class="acc__text">
+									<span class="acc__title">Developer account </span>
+									<span class="acc__sub">Use images to your post time.</span>
+								</span>
+
+								<span class="acc__dot" aria-hidden="true"></span>
+							</label>
+
+							<input
+								class="acc__control"
+								type="radio"
+								name="account"
+								id="acc-testing"
+							/>
+							<label class="acc acc-input" for="acc-testing">
+								<span class="acc__icon" aria-hidden="true">
+									<img
+										src="../../assets/img/suitcase.svg"
+										alt="suitcase icons"
+										class="acc__icon"
+									/>
+								</span>
+
+								<span class="acc__text">
+									<span class="acc__title">Testing account</span>
+									<span class="acc__sub"
+										>Use images to enhance time travel rivers.</span
+									>
+								</span>
+
+								<span class="acc__dot" aria-hidden="true"></span>
+							</label>
+
+							<div class="button-account">
+								<button class="button button--ghost">
+									<img
+										src="../../assets/img/arrow-left.svg"
+										class="icon subscribe__btn-left"
+										alt="arrow"
+									/>Previous
+								</button>
+								<button class="button button--primary">
+									<img
+										src="../../assets/img/arrow-right.svg"
+										class="icon subscribe__btn-right"
+										alt="arrow"
+									/>Continue
+								</button>
+							</div>
+						</form>
+					</div>
+				</section>
+			</main>
+
+			<footer class="footer">
+				<div class="footer__container container">
+					<p class="footer__copy">&copy; 2025 SnowUI</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
