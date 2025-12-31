@@ -12,7 +12,7 @@
 
 		<link rel="stylesheet" href="sign.authentication.css" />
 
-		<title>Setup new password</title>
+		<title>choose account type</title>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -50,59 +50,66 @@
 			<main>
 				<section class="system">
 					<div class="auth__card" role="region" aria-label="Sign in">
-						<h1 class="auth__title">Setup New Password</h1>
+						<h1 class="auth__title">Choose Account Type</h1>
 						<p class="setup__title">
-							Have you already reset the password?
-							<a class="auth__link" href="verification.html">Sign in</a>
+							if you need more info, please check out
+							<a class="auth__link" href="verification.html">Help Page.</a>
 						</p>
 
-						<form class="auth__form" action="sign-in.html">
-							<div class="auth__input">
-								<input
-									id="password"
-									name="password"
-									class="subscribe__input"
-									type="password"
-									placeholder="Password"
-									autocomplete="current-password"
-								/>
-
-								<button class="subscribe__btn" type="submit" id="hide-password">
+						<form class="auth__form" action="account-info.html">
+							<input
+								class="acc__control"
+								type="radio"
+								name="account"
+								id="acc-personal"
+								checked
+							/>
+							<label class="acc" for="acc-personal">
+								<span class="acc__icon" aria-hidden="true">
 									<img
-										class="icon"
-										src="../../assets/img/button-eyes.svg"
-										alt="hide password"
+										src="../../assets/img/account.svg"
+										alt="account icon"
+										class="acc__icon"
 									/>
-								</button>
-							</div>
+								</span>
 
-							<div class="skeleton-row" aria-hidden="true">
-								<span class="skeleton-pill"></span>
-								<span class="skeleton-pill"></span>
-								<span class="skeleton-pill"></span>
-								<span class="skeleton-pill"></span>
-							</div>
+								<span class="acc__text">
+									<span class="acc__title">Personal Account</span>
+									<span class="acc__sub"
+										>If you need more info, please check it out.</span
+									>
+								</span>
 
-							<p class="auth__p">
-								Use 8 or more characters witch a mix of letters, numbers &
-								symbols.
-							</p>
+								<span class="acc__dot" aria-hidden="true"></span>
+							</label>
 
 							<input
-								class="auth__input"
-								id="repeat__password"
-								name="password"
-								type="password"
-								placeholder="Repeat Password"
-								autocomplete="current-password"
+								class="acc__control"
+								type="radio"
+								name="account"
+								id="acc-corp"
 							/>
-							<p class="auth__check">
-								<input type="checkbox" class="checkbox" />
-								I Accept the
-								<a class="auth__link" href="#">Terms</a>
-							</p>
+							<label class="acc" for="acc-corp">
+								<span class="acc__icon" aria-hidden="true">
+									<!-- svg briefcase -->
+									<img
+										src="../../assets/img/suitcase.svg"
+										alt="suitcase icons"
+										class="acc__icon"
+									/>
+								</span>
 
-							<button class="auth__submit" type="submit">Submit</button>
+								<span class="acc__text">
+									<span class="acc__title">Corporate Account</span>
+									<span class="acc__sub"
+										>Create corporate account to many users.</span
+									>
+								</span>
+
+								<span class="acc__dot" aria-hidden="true"></span>
+							</label>
+
+							<button class="auth__submit" type="submit">Continue</button>
 						</form>
 					</div>
 				</section>

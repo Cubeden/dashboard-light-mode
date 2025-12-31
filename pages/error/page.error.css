@@ -111,20 +111,6 @@
 	color: #cbcbcb;
 }
 
-.subscribe__btn {
-	flex: 0 0 auto;
-	width: 20px;
-	height: 20px;
-
-	border: none;
-	background: transparent;
-	padding: 0;
-
-	display: grid;
-	place-items: center;
-	cursor: pointer;
-}
-
 .subscribe__btn:active {
 	transform: translateX(1px);
 }
